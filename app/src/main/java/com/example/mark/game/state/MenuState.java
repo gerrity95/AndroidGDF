@@ -6,23 +6,23 @@ import com.example.mark.framework.util.Painter;
 import com.example.mark.androidgdf.Assets;
 
 /**
- * Created by gerrity95 on 29/10/16.
+ * Created by Mark on 29/10/2016.
  */
-public class LoadState extends State {
 
-
+public class MenuState extends State {
     @Override
     public void init() {
-        Assets.load();
+
     }
 
     @Override
     public void update(float delta) {
-        setCurrentState(new MenuState());
+
     }
 
     @Override
     public void render(Painter g) {
+        g.drawImage(Assets.welcome, 0, 0);
 
     }
 
